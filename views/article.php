@@ -13,9 +13,9 @@
             <div></div>
             <h3><?=$article['title']?>Заголовок1</h3>
             <em>Опубликовано <?=$article['description']?></em>
-            <p><?=$article[content]?>Статья1</p>
-        </div class="article">
-        <div>
+            <p><?=$article['content']?>Статья1</p>
+        </div>
+        <div  class="article">
             <h3>Заголовок2</h3>
             <em>Опубликовано 2017-01-02</em>
             <p>Статья2</p>
