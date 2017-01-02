@@ -10,15 +10,10 @@
             <h1>Мой Блог</h1>
         <div>
             <div class="article">
-            <div></div>
-            <h3><?=$article['title']?>Заголовок1</h3>
-            <em>Опубликовано <?=$article['description']?></em>
-            <p><?=$article['content']?>Статья1</p>
+            <h3><?=$article['title']?></h3>
+            <em>Опубликовано: <?=$article['description']?></em>
+            <p><?=$article['content']?></p>
         </div>
-        <div  class="article">
-            <h3>Заголовок2</h3>
-            <em>Опубликовано 2017-01-02</em>
-            <p>Статья2</p>
         </div>
         <footer>
             <p>Мой первый блог
