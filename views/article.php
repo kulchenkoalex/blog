@@ -11,7 +11,7 @@
         <div>
             <div class="article">
             <h3><?=$article['title']?></h3>
-            <em>Опубликовано: <?=$article['description']?></em>
+            <em>Описание: <?=$article['description']?></em>
             <p><?=$article['content']?></p>
         </div>
         </div>
