@@ -11,6 +11,7 @@
     }
 
 function articles_get($id){
+    return ["id"=>1, "title"=>"Простой заголовок", "description"=>"2017-01-02", "content"=>"Тут будет написана статья"];
         
     }
 function articles_new($title, $description, $content){
