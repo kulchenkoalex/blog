@@ -5,4 +5,5 @@
        
     $articles = articles_all();
        
+    include("views/articles.php");
 ?>
