@@ -9,16 +9,13 @@
         <div>
             <h1>Мой Блог</h1>
         <div>
+            <?php foreach($articles as $a): ?>
             <div class="article">
-            <div></div>
-            <h3>Заголовок1</h3>
-            <em>Опубликовано 2017-01-02</em>
-            <p>Статья1</p>
-        </div>
-        <div class="article">
-            <h3>Заголовок2</h3>
-            <em>Опубликовано 2017-01-02</em>
-            <p>Статья2</p>
+                <h3><a href="article.php?id=<?=$a['id']?>"><?=$a['title']?></a></h3>
+            <em>Опубликовано <?=$a['description']?></em>
+            <p><?=$a['content']?></p>
+            </div>
+        <?php endforeach ?>
         </div>
         <footer>
             <p>Мой первый блог
