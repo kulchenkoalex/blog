@@ -17,8 +17,23 @@
             articles_new($link, $_POST['title'], $_POST['description'], $_POST['content']);
             header("Location: index.php");
         }
-        include("../views/article_admin.php");
+        include("../views/article_admin_add.php");
     }
+        else if($action == "edit")
+        {
+            if(!isset($_GET['id']))
+                header("Location: index.php");
+            $id = (int)$_GET['id'];
+            
+            if(!empty($_POST) && $id > 0)
+            {
+                articles_edit($link, $id, $_POST['title'], $_POST['description'], $_POST['content']);
+                header("Location: index.php");
+            }
+
+        $article = article_get($link, $id);
+        include("../views/article_admin.php");
+        }
     else
     {
         $articles = articles_all($link);

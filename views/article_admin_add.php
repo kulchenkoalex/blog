@@ -10,18 +10,18 @@
         <div class="container">
             <h1>Мой Блог</h1>
         <div>
-            <form method="post" action="index.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>">
+            <form method="post" action="index.php?action=add">
                 <label>
                     Название
-                    <input type="text" name="title" value="<?=$article['title']?>" class="form-item" autofocus required>
+                    <input type="text" name="title" value="" class="form-item" autofocus required>
                 </label>
                 <label>
                     Краткое описание
-                    <input type="text" name="description" value="<?=$article['description']?>" class="form-item" required>
+                    <input type="text" name="description" value="" class="form-item" required>
                 </label>
                 <label>
                     Cодержимое
-                    <textarea class="form-item" name="content" required><?=$article['content']?></textarea>
+                    <textarea class="form-item" name="content" required></textarea>
                 </label>
                 <input type="submit" value="Сохранить" class="btn">
             </form>
