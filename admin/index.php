@@ -17,7 +17,7 @@
             articles_new($link, $_POST['title'], $_POST['description'], $_POST['content']);
             header("Location: index.php");
         }
-        include("../views/article_admin.php");
+        include("../views/article_admin_add.php");
     }
         else if($action == "edit")
         {
