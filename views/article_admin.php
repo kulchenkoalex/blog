@@ -10,7 +10,7 @@
         <div class="container">
             <h1>Мой Блог</h1>
         <div>
-            <form method="post" action="index.php">
+            <form method="post" action="index.php?action=add">
                 <label>
                     Название
                     <input type="text" name="title" value="" class="form-item" autofocus required>
