@@ -62,7 +62,28 @@ function articles_new($link, $title, $description, $content)
         
         return true;
     }
-function articles_edit($id, $title, $description, $content){
+function articles_edit($link, $id, $title, $description, $content)
+    {
+        $title = trim($title);
+        $content = trim($content);
+        $description = trim($description);
+        $id = (int)$id;
+        
+        if ($title == '')
+            return false;
+        
+        $sql = "UPDATE articles SET title='%s', content='%s', description='%s' WHERE id='%d'";
+        
+        $query = sprintf($sql, mysqli_real_escape_string($link, $title),
+        mysqli_real_escape_string($link, $content),
+        mysqli_real_escape_string($link, $description), $id);
+        
+        $result = mysqli_query($link, $query);
+        
+        if (!$result)
+            die(mysqli_error($link));
+        
+        return mysqli_affected_rows($link);
         
     }
 function articles_delete($id){
