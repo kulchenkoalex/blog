@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf8">
         <title>Мой Блог</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body>
         <div>
             <h1>Мой Блог</h1>
-            <a href="admin">Панель Администратора</a>
         <div>
-            <table border="1">
+            <a href="index.php?action=add">Добавить статью</a>
+            <table class="admin-table" border="1">
                 <tr>
                     <th>Заголовок</th>
                     <th>Описание</th>
