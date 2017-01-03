@@ -34,6 +34,11 @@ function articles_get($link, $id_article)
         return $article;
     }
 
+function article_get($id_article)
+{
+    return ["title"=>"Заголовок", "content"=>"Текст", "id"=>1, "description"=>"2017 год.."];
+}
+
 function articles_new($link, $title, $description, $content)
     {
         $title = trim($title);
