@@ -21,7 +21,7 @@
     }
        
 
-function articles_get($link, $id_article)
+function article_get($link, $id_article)
     {
         $query = sprintf("SELECT * FROM articles WHERE id=%d", (int)$id_article);
         $result = mysqli_query($link, $query);
@@ -33,11 +33,7 @@ function articles_get($link, $id_article)
         
         return $article;
     }
-
-function article_get($id_article)
-{
-    return ["title"=>"Заголовок", "content"=>"Текст", "id"=>1, "description"=>"2017 год.."];
-}
+ 
 
 function articles_new($link, $title, $description, $content)
     {
