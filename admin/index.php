@@ -7,10 +7,16 @@
 
     if (isset($_GET['action']))
         $action = $_GET['action'];
-    else $action = "";
-
+    else 
+        $action = "";
+ 
     if ($action == "add")
     {
+        if(!empty($_POST))
+        {
+            articles_new($link, $_POST['title'], $_POST['description'], $_POST['content']);
+            header("Location: index.php");
+        }
         include("../views/article_admin.php");
     }
     else
