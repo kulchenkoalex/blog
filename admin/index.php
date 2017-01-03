@@ -23,7 +23,7 @@
         {
             if(!isset($_GET['id']))
                 header("Location: index.php");
-            $id = (int)$GET['id'];
+            $id = (int)$_GET['id'];
             
             if(!empty($_POST) && $id > 0)
             {
