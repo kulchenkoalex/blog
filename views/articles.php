@@ -17,10 +17,9 @@
 <ul id="nav"> 
  
  <li><a href="index.php" title="Главная"><!--<s5176>--><b>Главная</b><!--</s>--></a></li> 
-<li><a href="admin">Админка</a>
- </li> 
-    <li>
-<a href="index.php">Регистрация</a></li></ul>
+<li><a href="admin">Админка</a></li> 
+<li><a href="register.php">Регистрация</a></li>
+<li><a href="login.php">Вход</a></li></ul>
 
   
         <div class="blog_view">

@@ -11,6 +11,7 @@
             <h1>Мой Блог</h1>
         <div class="blog_view">
             <a href="index.php?action=add">Добавить статью</a>
+            <a href="users.php">Пользователи</a>
             <table class="admin-table" border="1">
                 <tr>
                     <th>Заголовок</th>
