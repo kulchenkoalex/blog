@@ -1,4 +1,23 @@
-footer{text-align: center}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+}
+footer{
+    text-align: center;
+}
 
 .article{
     margin-top: 40px;
@@ -6,5 +25,11 @@ footer{text-align: center}
 }
 
 .admin-table{
-    width: 100%;
+    width: 95%;
 }
+
+.blog_view{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
