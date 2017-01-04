@@ -22,6 +22,28 @@ if (isset($_GET['action']))
         }
         include("../views/user.php");
     }
+
+ else if($action == "edit")
+        {
+            if(!isset($_GET['id']))
+                header("Location: users.php");
+            $id = (int)$_GET['id'];
+            
+            if(!empty($_POST) && $id > 0)
+            {
+                articles_edit($link, $id, $_POST['name'], $_POST['surname'], $_POST['number'], $_POST['email'], $_POST['role'], $_POST['login'], $_POST['password']);
+                header("Location: users.php");
+            }
+
+        $user = user_get($link, $id);
+        include("../views/user.php");
+        }
+        else if ($action == "delete")
+        {
+            $id = $_GET['id'];
+            $user = users_delete($link, $id);
+            header("Location: users.php");
+        }
     else
     {
             $users = users_all($link);
