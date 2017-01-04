@@ -20,7 +20,7 @@ if (isset($_GET['action']))
             users_new($link, $_POST['name'], $_POST['surname'], $_POST['number'], $_POST['email'], $_POST['role'], $_POST['login'], $_POST['password']);
             header("Location: users.php");
         }
-        include("../views/user.php");
+        include("../views/user_add.php");
     }
 
  else if($action == "edit")
@@ -31,11 +31,11 @@ if (isset($_GET['action']))
             
             if(!empty($_POST) && $id > 0)
             {
-                articles_edit($link, $id, $_POST['name'], $_POST['surname'], $_POST['number'], $_POST['email'], $_POST['role'], $_POST['login'], $_POST['password']);
+                users_edit($link, $id, $_POST['name'], $_POST['surname'], $_POST['number'], $_POST['email'], $_POST['role'], $_POST['login'], $_POST['password']);
                 header("Location: users.php");
             }
 
-        $user = user_get($link, $id);
+        $users = user_get($link, $id);
         include("../views/user.php");
         }
         else if ($action == "delete")

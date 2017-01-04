@@ -22,7 +22,7 @@ function users_all($link)
 
 
 
-function users_get($link, $id_users)
+function user_get($link, $id_users)
     {
         $query = sprintf("SELECT * FROM users WHERE id=%d", (int)$id_users);
         $result = mysqli_query($link, $query);
