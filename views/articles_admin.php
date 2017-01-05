@@ -2,16 +2,20 @@
 <html>
     <head>
         <meta charset="utf8">
-        <title>Мой Блог</title>
+        <title>Панель Администратора</title>
         <link rel="stylesheet" href="../style.css">
-      
     </head>
     <body bgcolor="#c0c0c0">
         <div>
-            <h1>Мой Блог</h1>
+            <h1><center>Панель администратора</center></h1><br><br>
         <div class="blog_view">
-            <a href="index.php?action=add">Добавить статью</a>
-            <a href="users.php">Пользователи</a>
+             
+ 
+ <li><a href="../index.php" title="Главная">Вернуться на главную страницу сайта</a></li> 
+<li><a href="index.php">Статьи</a></li> 
+<li><a href="users.php">Пользователи</a></li>
+            <br><br><br>
+            <a href="index.php?action=add">Добавить статью</a><br><br>
             <table class="admin-table" border="1">
                 <tr>
                     <th>Заголовок</th>
@@ -29,7 +33,7 @@
                 </tr>  
         <?php endforeach ?>
             </table>
-        </div>
+        </div><br><br><br>
         <footer>
             <p>Мой первый блог
             <br>

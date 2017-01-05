@@ -21,7 +21,7 @@
     <br><br>
 <input type="submit" name="enter" value="Сохранить"> <input type="reset" value="Очистить">
             </form>
-        </div>
+        </div><br><br><br>
         <footer>
             <p>Мой первый блог
             <br>
