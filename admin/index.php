@@ -4,8 +4,8 @@
     require_once("../models/articles.php");
 
     $link = db_connect();
-
-    if (isset($_GET['action']))
+//include("models/comments/main.php");
+if (isset($_GET['action']))
         $action = $_GET['action'];
     else 
         $action = "";
@@ -45,5 +45,12 @@
         $articles = articles_all($link);
         include("../views/articles_admin.php");
     }
+
+function ModuleID($p1) 
+{
+    if ($p1 == 'article') return 1;
+   // else if ($p1 == 'dd') return 2;
+    else Message(1, 'Модуль не найден.', '/');
+}
     
 ?>
