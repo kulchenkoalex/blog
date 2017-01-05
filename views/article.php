@@ -20,7 +20,6 @@
  </li> 
     <li>
 <a href="index.php">Регистрация</a></li>
-        <li><a href="register.php">Регистрация</a></li>
 <li><a href="login.php">Вход</a></li></ul>
         <div>
             <h1>Мой Блог</h1>
