@@ -29,11 +29,12 @@
             <h3><?=$article['title']?></h3>
             <em>Описание: <?=$article['description']?></em>
             <p><?=$article['content']?></p>
+                 <?php COMMENTS() ?>
         </div>
         </div>
             </div>
-        <div class="footer">
-       <table class="footer-table" border="0" cellpadding="4" cellspacing="0" width="100%" style="border:1px solid #FFFFFF;">
+        <div >
+   <table class="footer-table" border="0" cellpadding="4" cellspacing="0" width="100%" style="border:1px solid #FFFFFF;">
 <tr><td align="center" style="background:#115847;"><!-- <copy> -->Copyright &copy 2016<!-- </copy> --></td></tr>
 </table>
         </div>
