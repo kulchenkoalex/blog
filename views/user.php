@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf8">
-        <title>Мой Блог</title>
+     <meta charset="utf8">
+        <title>Панель Администратора</title>
         <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     </head>
-    <body>
-        <div class="container">
-            <h1>Мой Блог</h1>
+    <body bgcolor="#c0c0c0">
+            <h1><center>Панель администратора</center></h1><br><br>
+        <div class="blog_view">
+ <li><a href="../index.php" title="Главная">Вернуться на главную страницу сайта</a></li> 
+<li><a href="index.php">Статьи</a></li> 
+<li><a href="users.php">Пользователи</a></li>
+            <br><br><br>
         <div class="container">
             <form method="post" action="../admin/users.php?action=<?=$_GET['action']?>&id=<?=$_GET['id']?>">
               <br><input type="text" name="login" value="<?=$users['login']?>" placeholder="Логин" maxlength="20" pattern="[A-Za-z-0-9]{3,20}" title="Не менее 3 и неболее 20 латинских символов или цифр." required>

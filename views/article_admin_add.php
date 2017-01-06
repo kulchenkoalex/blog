@@ -21,7 +21,7 @@
                 </label><br><br>
                 <label>
                     Краткое описание:
-                    <input type="text" name="description" value="" class="form-item" required>
+                    <textarea class="form-item" name="description" cols="80" rows="2" required></textarea>
                 </label><br><br>
                 <label>
                     Cодержимое:

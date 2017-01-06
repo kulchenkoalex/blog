@@ -1,5 +1,5 @@
 <?php
-    echo "Admin Panel";
+    
     require_once("../database.php");
     require_once("../models/users.php");
 
