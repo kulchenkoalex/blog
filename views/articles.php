@@ -27,9 +27,9 @@
         <div>
             <?php foreach($articles as $a): ?>
             <div class="article">
-                <h3><a href="article.php?id=<?=$a['id']?>"><?=$a['title']?></a></h3>
+          <h3><a href="article.php?id=<?=$a['id']?>"><?=$a['title']?></a></h3>
             <em>Описание: <?=$a['description']?></em>
-            <p><?=articles_intro($a['content'])?></p>
+            <p><br><?=articles_intro($a['content'])?></p>
             </div>
         <?php endforeach ?>
         </div>
