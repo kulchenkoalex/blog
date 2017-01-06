@@ -6,9 +6,9 @@ function COMMENTS()
     
    // if ($_SESSION['USER_LOGIN_IN'] != 1) echo '<br><br>Оставлять комментарии могут только зарегистрированные пользователи.';
     //else
-        echo '<form method="POST" action="/comments/add/models/'.$Page.'/id/'.$Param['id'].'";>
-    <textarea name="text" rows="3" cols="100" placeholter="Текст сообщения" required></textarea><br><input type="submit" name="enter" value="Отправить">
-    <input type="reset" value="Очистить"></form>';
+      //  echo '<form method="POST" action="/comments/add/models/'.$Page.'/id/'.$Param['id'].'";>
+    //<textarea name="text" rows="3" cols="100" placeholter="Текст сообщения" required></textarea><br><input type="submit" name="enter" value="Отправить">
+   // <input type="reset" value="Очистить"></form>';
 }
 
 

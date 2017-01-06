@@ -17,6 +17,7 @@
     </head>
             <body bgcolor="#132A49">
  <center><h1> <b>Регистрация пользователя</b></h1></center><br><br>
+                <a href="index.php">Главная страница</a>
    <div class="container"><table border=0>
         <tr>
  <td class="col1"> <img src="Img/Logo.JPG"  width="100%" ></td>
@@ -28,7 +29,8 @@
     <br><input type="email" name="email" placeholder="E-Mail" required>
 <br><input type="text" name="name" placeholder="Имя" maxlength="20" pattern="[А-Яа-яЁё-A-Za-z]{3,20}" title="Не менее 3 и неболее 20 символов." required>
     <br><input type="text" name="surname" placeholder="Фамилия" maxlength="20" pattern="[А-Яа-яЁё-A-Za-z]{3,20}" title="Не менее 3 и неболее 20 символов." required>
-    <br><input type="tel" name="number" placeholder="(050) 999-99-99" pattern="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Формат ввода (050) 121-34-57." required> <?$=$users['role'] ="Пользователь"?>
+    <br><input type="tel" name="number" placeholder="(050) 999-99-99" pattern="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Формат ввода (050) 121-34-57." required> 
+         <br><select size="1" name="role" hidden="hidden"><option value="Пользователь">Пользователь</option></select>
     <br><br>
 <br><input type="submit" name="enter" value="Регистрация"> <input type="reset" value="Очистить">
          </form>   
